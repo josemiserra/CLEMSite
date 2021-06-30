@@ -1,4 +1,3 @@
-
 # CLEMSite 
 
 __This is a preliminary version of the software for CLEMSite software, granted under an MIT License. If you decide to use this software, read carefully this document and the linked ones (manual).__
@@ -15,7 +14,7 @@ Check our Manual for more information [Manual](./Manual/README.md)
 
 You can find additional information in :
 
-git.embl.de/lleti/clemsite-notebooks
+https://github.com/josemiserra/CLEMSite_notebooks
 
 
 
