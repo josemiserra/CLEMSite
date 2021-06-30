@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MSite2p1</class>
+ <widget class="QMainWindow" name="MSite2p1">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1655</width>
+    <height>1127</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MSite LM-SEM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/res/msite.ico</normaloff>:/res/msite.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:rgb(0, 0, 127)</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+      </item>
+      <item row="1" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>100</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_All">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/res/do_all.png</normaloff>:/res/do_all.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_One">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/res/one.png</normaloff>:/res/one.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_Delete">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/res/collapse.png</normaloff>:/res/collapse.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Preferred</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="pushButton_GridMap">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../resources.qrc">
+                <normaloff>:/res/2x2_grid.ico</normaloff>:/res/2x2_grid.ico</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>48</width>
+                <height>48</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_ErrorMap">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/res/chart_line_2.ico</normaloff>:/res/chart_line_2.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>100</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Preferred</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_Export">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/res/load_point.png</normaloff>:/res/load_point.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>100</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_Samples">
+          <property name="gridStyle">
+           <enum>Qt::DashLine</enum>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>200</number>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>36</number>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>60</number>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Sample Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Points</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Letter</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Ready</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>File name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Path:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_1">
+        <item>
+         <widget class="QSplitter" name="splitter_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="QLabel" name="label_load">
+           <property name="text">
+            <string>Load your targets sample folder :</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEditFolder"/>
+          <widget class="QPushButton" name="pushButtonFolder">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources.qrc">
+             <normaloff>:/res/open.png</normaloff>:/res/open.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>38</width>
+             <height>38</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0" rowspan="2">
+       <widget class="QTreeView" name="treeView"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1655</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_experiment"/>
+    <addaction name="actionSave_experiment"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionPreferences"/>
+    <addaction name="actionRename_Light_M_files"/>
+    <addaction name="actionClear_all_computed_data"/>
+   </widget>
+   <addaction name="menuEdit"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionLoad_experiment">
+   <property name="text">
+    <string>Load folder</string>
+   </property>
+  </action>
+  <action name="actionSave_experiment">
+   <property name="text">
+    <string>Save log as...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_experiment_as">
+   <property name="text">
+    <string>Save experiment as...</string>
+   </property>
+  </action>
+  <action name="actionRename_Light_M_files">
+   <property name="text">
+    <string>Rename LM files</string>
+   </property>
+  </action>
+  <action name="actionClear_all_computed_data">
+   <property name="text">
+    <string>Clear all computed data</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_All</sender>
+   <signal>clicked()</signal>
+   <receiver>MSite2p1</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>598</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>489</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

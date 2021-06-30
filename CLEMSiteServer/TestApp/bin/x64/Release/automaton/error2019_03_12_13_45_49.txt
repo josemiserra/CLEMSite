@@ -1,0 +1,1 @@
+In findCentroidSquare2: ARGUMENTS NOT GIVEN or EXECUTION ERROR

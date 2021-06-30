@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1037</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources.qrc">
+    <normaloff>:/res/embl_logo.png</normaloff>:/res/embl_logo.png</iconset>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>801</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GroupBox</string>
+    </property>
+    <widget class="QPushButton" name="pushButtonFolder_4">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>20</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../resources.qrc">
+       <normaloff>:/res/open.ico</normaloff>:/res/open.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>731</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Load your reference sample folder :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditFolder_2"/>
+     <widget class="QPushButton" name="pushButtonFolder_2">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../resources.qrc">
+        <normaloff>:/res/open.ico</normaloff>:/res/open.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButtonFolder_3">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>60</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../resources.qrc">
+       <normaloff>:/res/open.ico</normaloff>:/res/open.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>731</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Load your target sample folder :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditFolder"/>
+     <widget class="QPushButton" name="pushButtonFolder">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../resources.qrc">
+        <normaloff>:/res/open.ico</normaloff>:/res/open.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTreeView" name="treeView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>256</width>
+      <height>561</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Samples Folder List:</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listImages">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>210</y>
+      <width>741</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+    </property>
+    <property name="resizeMode">
+     <enum>QListView::Adjust</enum>
+    </property>
+    <property name="gridSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="viewMode">
+     <enum>QListView::IconMode</enum>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>681</y>
+      <width>741</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1037</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionSettings"/>
+   </widget>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

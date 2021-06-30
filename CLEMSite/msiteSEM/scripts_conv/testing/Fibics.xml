@@ -1,0 +1,58 @@
+<Fibics version="1.0">
+    <Application>
+		<Version>AtlasEngine v5.0</Version>
+		<Date>2016-01-31T13:01:32.406+01:00</Date>
+		<SupportsTransparency>true</SupportsTransparency>
+		<TransparentPixelValue>0</TransparentPixelValue>
+	</Application>
+	
+	<Image>
+		<Width>1000</Width>
+		<Height>1000</Height>
+		<BoundingBox.Left>0</BoundingBox.Left>
+		<BoundingBox.Right>1000</BoundingBox.Right>
+		<BoundingBox.Top>0</BoundingBox.Top>
+		<BoundingBox.Bottom>999</BoundingBox.Bottom>
+		<Machine>SEM-SN</Machine>
+		<Beam>SEM</Beam>
+		<Aperture>[5] 60 µm [HC] (1,5 kV)</Aperture>
+		<Detector>SESI</Detector>
+		<Contrast>21.7959995269775</Contrast>
+		<Brightness>47.1370010375977</Brightness>
+	</Image>
+	<Scan>
+		<Dwell units="ns">5000</Dwell>
+		<LineAvg>3</LineAvg>
+		<FOV_X units="um">1248.2234479593</FOV_X>
+		<FOV_Y units="um">1248.2234479593</FOV_Y>
+		<ScanRot units="deg">0</ScanRot>
+		<Ux>1.2482234479593</Ux>
+		<Uy>0</Uy>
+		<Vx>0</Vx>
+		<Vy>-1.2482234479593</Vy>
+		<Focus>0.00495381699874997</Focus>
+		<StigX>-34.9609985351563</StigX>
+		<StigY>-1.13499999046326</StigY>
+	</Scan>
+	<Stage>
+		<X units="um">-66754.3149902485</X>
+		<Y units="um">-88065.8189996761</Y>
+		<Z units="um">41915.1186943054</Z>
+		<Tilt units="deg">-3.81469729968605E-6</Tilt>
+		<Rot units="deg">316.423431396484</Rot>
+		<M units="mm">1.75653025507927</M>
+	</Stage>
+	<BeamInfo>
+		<item name="Ext V">=  3.80 kV</item>
+		<item name="Ext I">=  251.1 ?A</item>
+		<item name="Fil I">=  2.311 A</item>
+	</BeamInfo>
+		<DetectorInfo>
+		<item name="Mode">SE</item>
+		<item name="Collector">= 0.878 kV</item>
+		<item name="Convertor">= 0.000 kV</item>
+		</DetectorInfo>
+	<ScanInfo>
+		<item name="Tilt Corrn. Angle">= 54,0°</item>
+	</ScanInfo>
+</Fibics>

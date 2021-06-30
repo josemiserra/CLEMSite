@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1218</width>
+    <height>1265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="4" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Brightness:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Contrast:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QSlider" name="horizontalSlider_c">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" rowspan="2">
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Rotate:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QDoubleSpinBox" name="doubleSpinBoxX">
+       <property name="maximum">
+        <double>8096.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.500000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Flip H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>Flip V</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="2">
+    <widget class="QSlider" name="horizontalSlider_b">
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="invertedControls">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QGraphicsView" name="graphicsView"/>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QCheckBox" name="checkBox_c1">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Channel 1:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_image_1"/>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_equalize_1">
+         <property name="text">
+          <string>Equalize</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="checkBox_c2">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Channel 2:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_image_2"/>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_equalize_2">
+         <property name="text">
+          <string>Equalize</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QCheckBox" name="checkBox_c3">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Channel 3:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_image_3"/>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_equalize_3">
+         <property name="text">
+          <string>Equalize</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

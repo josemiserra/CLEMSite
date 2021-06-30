@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>HTML Editor - Full Version</title>
+</head>
+<body>
+    <h1>MSite CServer</h1>
+
+    <p>&nbsp;</p>
+
+    <h2>Design information&nbsp;</h2>
+
+    <p>A GUI is created and the following ActiveX components are added as .dll.&nbsp;</p>
+
+    <ul>
+        <li>AxInterop.APILib.dll</li>
+        <li>AxInterop.FIBVISUALBASICLib.dll</li>
+        <li>Interop.APILib.dll</li>
+        <li>Interop.FIBVISUALBASICLib.dll</li>
+    </ul>
+
+    <p>The .dlls are provided by Zeiss, and VS2013 creates automatically a wrap around the API for calling the microscope functions. This procedure can be done using any .NET language. C# was chosen because the high OOP abstraction layer makes your life easier coding. A previous version of the Server was written in C++ but the string management was tedious and error prone.</p>
+
+    <p><strong>Other dlls:</strong></p>
+
+    <ul>
+        <li>LBIndustrialCtrls. &nbsp;Library of industrial buttons for C# like knobs or analog counters. Only the start, stop button and leds remain, but in future versions, knob controls can be added to control focus and stigmatism from the GUI or remotely.</li>
+        <li>NewtonSoft.Json &nbsp;Library for JSON managing.</li>
+    </ul>
+    <p><strong>Files :&nbsp;</strong></p>
+
+    <ul>
+        <li>Program.cs : &nbsp;Main, initializes GUI</li>
+        <li>
+            MainForm.cs : GUI. &nbsp;
+            <ul>
+                <li>Start, Stop, ComboBox with IP, EditBox with Port,&nbsp;</li>
+                <li>The GUI initializes an independent backgroundworker that contains the AsynchronousSocketListener</li>
+            </ul>
+            <figure>
+                <img src="ClassAdapter.png" alt="class adapter">
+                <figcaption><span style="font-size:10px;"> <em>The class adapter pattern expressed in UML.</em></span></figcaption>
+            </figure>
+        </li>
+        <li>ZeissAdaptee.cs : Calls the functions from the SmartSEM APIs&nbsp;</li>
+        <li>MicroAdapter.cs&nbsp;and MicroCom.cs: Interface for the Adapter pattern.&nbsp;&nbsp;An adapter helps two incompatible interfaces to work together. This is the real world definition for an adapter. Interfaces may be incompatible but the inner functionality should suit the need. The Adapter design pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients. (from Wikipedia, <em>adapter pattern</em>).</li>
+        <li>Listerner.cs : Implements the socket listener based on the Net.Socket library and AsyncCallback. The loop is very simple and should be improved.</li>
+        <li>Helper.cs : Uses the MicroCom interface to call the functions and wraps the answers in JSON structure to send them back.</li>
+        <li>ControlStatus.cs : Used to ask the microscope and generate a log file. (Incomplete) # TO DO</li>
+    </ul>
+</body>
+</html>

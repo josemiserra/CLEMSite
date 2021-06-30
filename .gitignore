@@ -1,0 +1,25 @@
+*.log
+CLEMSite/__pycache__/
+CLEMSite/.idea/
+CLEMSiteServer/.vs
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+data
+crops
+selected
+extra_sw
+
+# temporary editor files that should not be in git
+*.orig
+*.bak
+*.swp
+.DS_Store
+
+# VSCode
+.vscode/

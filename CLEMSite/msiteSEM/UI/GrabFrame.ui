@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogGrab</class>
+ <widget class="QDialog" name="DialogGrab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Grab Frame</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources.qrc">
+    <normaloff>:/res/msite.png</normaloff>:/res/msite.png</iconset>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>610</y>
+     <width>461</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>151</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Resolution:</string>
+   </property>
+  </widget>
+  <widget class="QDial" name="dial_pixelsize">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>291</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>5</number>
+   </property>
+   <property name="maximum">
+    <number>2500</number>
+   </property>
+   <property name="pageStep">
+    <number>100</number>
+   </property>
+   <property name="value">
+    <number>800</number>
+   </property>
+   <property name="tracking">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>true</bool>
+   </property>
+   <property name="invertedControls">
+    <bool>true</bool>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="notchesVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>270</y>
+     <width>611</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="3">
+     <widget class="QSlider" name="horizontalSlider_dwellTime">
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QDoubleSpinBox" name="spinBox_scanRotation">
+      <property name="decimals">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <double>360.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QDoubleSpinBox" name="SpinBox_pixelSize">
+      <property name="locale">
+       <locale language="English" country="UnitedStates"/>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhFormattedNumbersOnly</set>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="minimum">
+       <double>5.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>2500.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>800.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Line Average:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Scan Rotation (º):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Dwell Time (us):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QSpinBox" name="SpinBox_LineAverage">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="maximum">
+       <number>50</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QDoubleSpinBox" name="SpinBox_dwellTime">
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="value">
+       <double>5.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Pixel Size (nm):</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QSlider" name="horizontalSlider_LAVG">
+      <property name="maximum">
+       <number>50</number>
+      </property>
+      <property name="value">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="3">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>480</y>
+     <width>621</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEditFolder_2"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_load">
+      <property name="text">
+       <string>Folder to save :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButtonFolder">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="../resources.qrc">
+        <normaloff>:/res/open.ico</normaloff>:/res/open.ico</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>90</y>
+     <width>314</width>
+     <height>164</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_512">
+      <property name="text">
+       <string>512</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButton_2048">
+      <property name="text">
+       <string>2048</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton_1200">
+      <property name="text">
+       <string>1200</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_4096">
+      <property name="text">
+       <string>4096</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_1024">
+      <property name="text">
+       <string>1024</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>buttonBox</zorder>
+  <zorder>label_2</zorder>
+  <zorder>dial_pixelsize</zorder>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SpinBox_dwellTime</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>377</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SpinBox_pixelSize</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SpinBox_LineAverage</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>332</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dial_pixelsize</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_scanRotation</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_LAVG</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_dwellTime</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonFolder</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>644</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_512</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_1024</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_1200</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2048</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4096</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogGrab</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

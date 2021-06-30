@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditOptions</class>
+ <widget class="QDialog" name="EditOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Options</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBoxEnd">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>660</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QToolBox" name="toolBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>751</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="page_measure">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Measure Options</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>391</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_mo">
+          <property name="text">
+           <string>Change scale:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_mo">
+          <item>
+           <property name="text">
+            <string>meters (m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>centimeters (cm)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>milimeters (mm)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>micrometers (um)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>nanometers (nm)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Scale">
+        <property name="text">
+         <string>Current scale: meters</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_grid_options">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Grid Options</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>493</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Select  left upper corner : </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="cboxLUC">
+          <item>
+           <property name="text">
+            <string>0A</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QFormLayout" name="formLayout_2">
+          <property name="fieldGrowthPolicy">
+           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Number of Columns :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="spinBoxCol">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>20</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Number of Rows:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QSpinBox" name="spinBoxRow">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>26</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_RL90">
+            <property name="text">
+             <string>Rotate 90º</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_RR90">
+          <property name="text">
+           <string>Rotate -90º</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>        Rotate:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_Rotate">
+            <property name="minimum">
+             <number>-90</number>
+            </property>
+            <property name="maximum">
+             <number>90</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_FlipH">
+          <property name="text">
+           <string>Flip Horizontal</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_FlipVertical">
+          <property name="text">
+           <string>Flip Vertical</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_frame_capturing">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Frame capturing options</string>
+    </attribute>
+    <widget class="QWidget" name="horizontalLayoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>309</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Frames directory input   :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_DirInput"/>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_input">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>309</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Frames directory output:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_DirOutput"/>
+      </item>
+      <item>
+       <widget class="QToolButton" name="toolButton_output">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>701</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLineEdit" name="hostLineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ip address of SEM Server&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDigitsOnly</set>
+          </property>
+          <property name="inputMask">
+           <string>000.000.000.000; </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="portLineEdit">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Port of your server&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDigitsOnly</set>
+          </property>
+          <property name="inputMask">
+           <string>00000; </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Hcell folder: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_hcell"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_hcelldir">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>691</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <italic>true</italic>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text">
+         <string>Graphics server address :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBoxUseLocal">
+        <property name="text">
+         <string>Use local program</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_line_detection">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Line Detection Parameters</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>711</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_17">
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>LM</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>311</width>
+           <height>204</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Gaussian smooth:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_gaussian"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_21">
+            <item>
+             <widget class="QCheckBox" name="checkBox_clahe">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>CLAHE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>Canny Threshold :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_canny"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_20">
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string>Angle increment for peak detection:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_angleInc"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>K neighbors for OFT:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_K"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>SEM</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>301</width>
+           <height>204</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>Gaussian smooth:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_sem_gaussian"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>Stroke width (Only SEM):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_sem_stroke"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_24">
+            <item>
+             <widget class="QCheckBox" name="checkBox_sem_clahe">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>CLAHE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_25">
+            <item>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>Canny Threshold :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_sem_canny"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_26">
+            <item>
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>Angle increment for peak detection:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBox_sem_angleinc"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_27">
+            <item>
+             <widget class="QLabel" name="label_22">
+              <property name="text">
+               <string>K neighbors for OFT:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_sem_K"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>676</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_28">
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Matlab scripts folder LM : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_matlabLM"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_matlabLM">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_29">
+        <item>
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>Matlab scripts folder SEM : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_matlabSEM"/>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_matlabSEM">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_letter_detection">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Letter Detection Parameters</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="page_registration_parameters">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Registration parameters</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="page_experimental_setup_lm">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>751</width>
+      <height>374</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Experimental setup from LM</string>
+    </attribute>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>700</width>
+       <height>136</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>700</width>
+       <height>163</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Change setup from list</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QPushButton" name="pushButton_add">
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_remove">
+          <property name="text">
+           <string>Remove selected</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Channel:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_dye">
+          <item>
+           <property name="text">
+            <string>GFP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RFP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>YFP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mCherry</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hoescht</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DAPI</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FITC</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CFP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alexa_488</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TexasRed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TL -Transmited Light</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RL - Reflected Light</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CY3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alexa_568</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Zoom factor: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinBox_zoom_factor"/>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Lens :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_lens">
+          <item>
+           <property name="text">
+            <string>5x</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10x</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20x</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>40x</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cboxLUC</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBoxCol</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBoxRow</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBoxEnd</sender>
+   <signal>accepted()</signal>
+   <receiver>EditOptions</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>217</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBoxEnd</sender>
+   <signal>rejected()</signal>
+   <receiver>EditOptions</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>217</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_FlipH</sender>
+   <signal>clicked()</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_RL90</sender>
+   <signal>clicked()</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_RR90</sender>
+   <signal>clicked()</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_FlipVertical</sender>
+   <signal>clicked()</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_Rotate</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>416</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxUseLocal</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>EditOptions</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

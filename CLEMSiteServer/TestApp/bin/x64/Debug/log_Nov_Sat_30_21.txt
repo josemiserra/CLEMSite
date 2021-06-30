@@ -1,0 +1,1986 @@
+ Entry : 9:16:16 PM Saturday, November 30, 2019
+  :_ 9:16:16 PM--Server on wait. Click Start to connect to ATLAS.
+
+-------------------------------
+ Entry : 9:16:18 PM Saturday, November 30, 2019
+  :_ 9:16:18 PM--Starting server for CLEMSite clients.
+
+-------------------------------
+ Entry : 9:16:18 PM Saturday, November 30, 2019
+  :_ 9:16:18 PM--CURRENT SETTINGS: Check that you agree with these settings.
+ If not, click on Start again to stop the services, change the .pref file (use a text editor and save) and click on Start button again.
+
+
+-------------------------------
+ Entry : 9:16:18 PM Saturday, November 30, 2019
+  :python_folder = C:\Users\Owner\Anaconda3\python.exe
+automaton_folder = default
+output_folder = G:\Acquisitions\29Nov19
+
+-------------------------------
+ Entry : 9:16:18 PM Saturday, November 30, 2019
+  :_ 9:16:18 PM--Server is listening.
+
+-------------------------------
+ Entry : 9:17:10 PM Saturday, November 30, 2019
+  :_ 9:17:10 PM--API not initialized. A client has to connect first. 
+
+
+-------------------------------
+ Entry : 9:17:22 PM Saturday, November 30, 2019
+  :_ 9:17:22 PM--Connected.
+Initialization of Engine Completed. 
+Initialization success. Connected.
+
+
+-------------------------------
+Method Connect. Reply:{
+  "Connection": "Accepted",
+  "Status": "Connected"
+}
+ Entry : 9:30:32 PM Saturday, November 30, 2019
+  :_ 9:30:32 PM--API has been initialized 
+
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 9:31:07 PM Saturday, November 30, 2019
+  :_ 9:31:07 PM--Saving FIB-SEM state:
+FIB Apertures ID:Name 
+-FIB aperture number 0, ID: 306424419,30kV:3nA
+-FIB aperture number 1, ID: 732970894,30kV:700pA
+-FIB aperture number 2, ID: 364957175,30kV:2pA
+-FIB aperture number 3, ID: 177681292,30kV:5pA
+-FIB aperture number 4, ID: 1388968545,30kV:10pA
+-FIB aperture number 5, ID: 1032996059,30kV:20pA
+-FIB aperture number 6, ID: 1234721672,30kV:50pA ref
+-FIB aperture number 7, ID: 1108378511,30kV:100pA
+-FIB aperture number 8, ID: 296843511,30kV:300pA
+-FIB aperture number 9, ID: 1480025651,30kV:700pA_2
+-FIB aperture number 10, ID: 1041584718,30kV:1.5nA
+Repeated:30kV:3nA-FIB aperture number 11, ID: 306424419,30kV:3nA
+-FIB aperture number 12, ID: 757129677,30kV:7nA
+-FIB aperture number 13, ID: 1817056095,30kV:15nA_2
+-FIB aperture number 14, ID: 225314257,30kV:30nA
+-FIB aperture number 15, ID: 1741703057,30kV:1.5nA_2
+-FIB aperture number 16, ID: 1907525970,30kV:15nA
+-FIB aperture number 17, ID: 419760252,5kV:10pA
+-FIB aperture number 18, ID: 1169971986,5kV:200pA
+-FIB aperture number 19, ID: 416578549,2kV:10pA
+-FIB aperture number 20, ID: 799330023,2kV:200pA
+-FIB aperture number 21, ID: 1853225722,1kV:200pA
+-FIB aperture number 22, ID: 134724105,0.5kV:200pA
+-FIB aperture selected for imaging: 30kV:50pA ref
+-FIB aperture selected for burning a mark: 30kV:3nA
+FIB SESI B&C: 50 B,27.6125 C
+ Current state SEM using aperture:1.5 kV | 700 pA [An]
+SEM SESI B&C: 50.03 B,19.93376 C
+Getting SEM ESB for detecting trench B&C :18.36501 B,59.265 C
+Original SEM ESB for acquisition (to be changed later) B&C :16.36501 B,58.265 C
+Original SEM ESB for focus during acquisition (to be changed later) B&C :
+27.54751 B,56.30175 C
+FOV :15.400053024292 x,15.400053024292 y 
+Tilt correction:0.942477796076938
+Status saved in position:X :-41394.296839751,Y :-72145.019621956,Z :41478.6221462464,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+
+ Status saved 
+
+
+-------------------------------
+ Entry : 9:49:11 PM Saturday, November 30, 2019
+  :_ 9:49:11 PM--API has been initialized 
+
+
+-------------------------------
+ Entry : 9:50:03 PM Saturday, November 30, 2019
+  :_ 9:50:03 PM--API has been initialized 
+
+
+-------------------------------
+Method Connect. Reply:{
+  "Connection": "Accepted",
+  "Status": "Connected."
+}
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 9:50:17 PM Saturday, November 30, 2019
+  :_ 9:50:17 PM--Current state SEM using aperture:1.5 kV | 700 pA [An] Stigmators X,Y-0.355904817581177,0.0907426849007607
+ Beam shift at X,Y0,0
+ WD at4916.64186120033 um
+ Changing B&C SEM in SESI mode: B -50.03 - C -19.93376
+Restoring position toX :-41394.296839751,Y :-72145.019621956,Z :41478.6221462464,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+State loaded.
+
+-------------------------------
+ Entry : 9:51:11 PM Saturday, November 30, 2019
+  :_ 9:51:11 PM--Adding information from Beam ID's in shapes
+ Checking shape: Atlas 3D Coarse Trench
+ BeamID of value 1907525970 corresponds to 30kV:15nA
+ Checking shape: Atlas 3D ROI
+ BeamID of value 1817056095 corresponds to 30kV:15nA_2
+ Checking shape: Atlas 3D Fine Trench
+ BeamID of value 757129677 corresponds to 30kV:7nA
+ Checking shape: Atlas 3D Coarse Trench
+ BeamID of value 306424419 corresponds to 30kV:3nA
+
+-------------------------------
+ Entry : 9:51:14 PM Saturday, November 30, 2019
+  :_ 9:51:14 PM--Moved to position: X :-40694.688,Y :-71618.48,Z :41478.6221462464,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Executing GetCenterSquare :C:\Users\Owner\Anaconda3\python.exe G:\clemsite-master\CLEMSiteServer\TestApp\bin\x64\Debug\automaton\findCentroidSquare.py G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_47889___0003\coincidence_point_checks\SEM_1st_original_-2019-11-30_09-51-58-PM.tif G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_47889___0003\coincidence_point_checks\SEM_1st_square_burned_-2019-11-30_09-51-58-PM.tif -2019-11-30_09-51-58-PM
+Centroid of square found 0
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 9:56:19 PM Saturday, November 30, 2019
+  :_ 9:56:19 PM--Coincidence point finished.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 9:56:43 PM Saturday, November 30, 2019
+  :_ 9:56:43 PM--Corrected position to:X :-40629.9874618377,Y :-71634.3304780175,Z :41479.7988890013,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+
+
+-------------------------------
+ Entry : 9:56:43 PM Saturday, November 30, 2019
+  :_ 9:56:43 PM--Updating position finished
+
+-------------------------------
+ Entry : 9:56:43 PM Saturday, November 30, 2019
+  :_ 9:56:43 PM--Success
+
+-------------------------------
+ Entry : 9:56:43 PM Saturday, November 30, 2019
+  :_ 9:56:43 PM--Coincidence point and autofocus on region finished.
+
+-------------------------------
+ Entry : 9:56:43 PM Saturday, November 30, 2019
+  :_ 9:56:43 PM--Preparing trenches.
+
+-------------------------------
+ Entry : 9:56:43 PM Saturday, November 30, 2019
+  :_ 9:56:43 PM--View changed to -36 degrees
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 9:57:01 PM Saturday, November 30, 2019
+  :_ 9:57:01 PM--Digging trenches for NO_ID_47889___0003
+
+-------------------------------
+ Entry : 9:57:06 PM Saturday, November 30, 2019
+  :_ 9:57:06 PM--Starting COARSE trench.
+
+-------------------------------
+ Entry : 10:15:30 PM Saturday, November 30, 2019
+  :_ 10:15:30 PM--COARSE trench job completed.
+
+-------------------------------
+ Entry : 10:15:32 PM Saturday, November 30, 2019
+  :_ 10:15:32 PM--Starting fine trench.
+
+-------------------------------
+ Entry : 10:18:28 PM Saturday, November 30, 2019
+  :_ 10:18:28 PM--FINE trench job completed
+
+-------------------------------
+ Entry : 10:18:33 PM Saturday, November 30, 2019
+  :_ 10:18:33 PM--Detecting trench.
+
+-------------------------------
+ Entry : 10:18:38 PM Saturday, November 30, 2019
+  :_ 10:18:38 PM--View changed to -36 degrees
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 10:18:57 PM Saturday, November 30, 2019
+  :_ 10:18:57 PM--Trench detected.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 10:19:50 PM Saturday, November 30, 2019
+  :_ 10:19:50 PM--PROMPT MESSAGE: Set up your Brightness and Contrast and press ok.ACQUISITION BRIGHTNESS and CONTRAST: 
+ Set up your B&C for ACQUISITION, and then press OK. 
+ If necessary, adjust focus and stigmators.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+ Entry : 10:24:26 PM Saturday, November 30, 2019
+  :_ 10:24:26 PM--Resuming operations after setting BnC.
+
+-------------------------------
+ Entry : 10:24:26 PM Saturday, November 30, 2019
+  :_ 10:24:26 PM--ESB final values:18.36501,59.265
+
+-------------------------------
+ Entry : 10:24:27 PM Saturday, November 30, 2019
+  :_ 10:24:27 PM--PROMPT MESSAGE: Set up your Brightness and Contrast and press ok.AUTOFOCUS and AUTOSTIG BRIGHTNESS and CONTRAST: 
+ Set up your B&C for FOCUS and then press OK.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+ Entry : 10:25:11 PM Saturday, November 30, 2019
+  :_ 10:25:11 PM--Resuming operations after setting BnC.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:25.37,53.26
+ Entry : 10:25:47 PM Saturday, November 30, 2019
+  :_ 10:25:47 PM--Original wd is :4928.8421869278
+  Original stigs are:-0.355904817581177,0.0907426849007607
+
+-------------------------------
+ Entry : 10:27:42 PM Saturday, November 30, 2019
+  :_ 10:27:42 PM--AFAS first attempt COARSE, new wd:4887.03837618232
+ AFAS success first attempt COARSE, new stigmators are:1.0126336812973,0.141975924372673
+
+-------------------------------
+ Entry : 10:29:35 PM Saturday, November 30, 2019
+  :_ 10:29:35 PM--AFAS first attempt MEDIUM, new wd:4885.80344244838
+ AFAS success first attempt MEDIUM, new stigmators are:0.504124462604523,-0.0696039274334908
+
+-------------------------------
+ Entry : 10:31:38 PM Saturday, November 30, 2019
+  :_ 10:31:38 PM--Stig Failed in first attempt.
+
+-------------------------------
+ Entry : 10:34:38 PM Saturday, November 30, 2019
+  :_ 10:34:38 PM--AFAS first attempt MEDIUM 2nd part, new wd:4876.15261226892
+ AFAS success first attempt MEDIUM 2nd part, new stigmators are:-0.227551653981209,-0.00661491556093097
+
+-------------------------------
+ Entry : 10:36:13 PM Saturday, November 30, 2019
+  :_ 10:36:13 PM--Focus Failed in first attempt.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:25.37,53.26
+ Entry : 10:37:59 PM Saturday, November 30, 2019
+  :_ 10:37:59 PM--We were not able to focus. Focus manually or move to the next sample.
+
+-------------------------------
+ Entry : 10:37:59 PM Saturday, November 30, 2019
+  :_ 10:37:59 PM--We were not able to focus. Focus manually or move to the next sample.
+
+-------------------------------
+ Entry : 10:37:59 PM Saturday, November 30, 2019
+  :_ 10:37:59 PM--Trenches ready, ready to acquire.
+
+-------------------------------
+ Entry : 10:37:59 PM Saturday, November 30, 2019
+  :_ 10:37:59 PM--Starting acquisition of NO_ID_47889___0003
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 10:38:00 PM Saturday, November 30, 2019
+  :_ 10:38:00 PM--{
+  "job_number": 0,
+  "job_state": "STARTING",
+  "roi_y_length": 15.0,
+  "roi_x_length": 33.149997711181641,
+  "roi_depth": 30.0,
+  "job_folder": "G:\\Acquisitions\\29Nov19\\29_Nov_test\\NO_ID_47889___0003",
+  "job_name": "NO_ID_47889___0003",
+  "project_folder": "G:\\Acquisitions\\29Nov19",
+  "local_setup_file": "G:/clemsite-master/CLEMSite/msite4A/resources/setups/25_25_200_8nm_COPB1_0706_good.a3d-setup",
+  "tag": "NO_ID_47889",
+  "SliceThickness": 0.2,
+  "dX": 40.0,
+  "dY": 29.5,
+  "setup_file": "G:\\Acquisitions\\29Nov19\\29_Nov_test\\NO_ID_47889___0003\\25_25_200_8nm_COPB1_0706_good.a3d-setup",
+  "unit_scale": "micrometer",
+  "x": -40629.987461837714,
+  "y": -71634.330478017466,
+  "z": 41479.7988890013,
+  "DefaultStabilizationDuration": 300000,
+  "AF_interval": 1800000
+}
+
+-------------------------------
+ Entry : 10:38:03 PM Saturday, November 30, 2019
+  :_ 10:38:03 PM--ROI Width: 33.1499977111816, Height:15
+ OffsetX :0, OffsetY :0
+
+-------------------------------
+ Entry : 10:38:03 PM Saturday, November 30, 2019
+  :_ 10:38:03 PM--Message timer active.
+
+-------------------------------
+ Entry : 10:39:04 PM Saturday, November 30, 2019
+  :_ 10:39:03 PM--Blackwatcher is active.
+
+-------------------------------
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+ Entry : 10:53:10 PM Saturday, November 30, 2019
+  :_ 10:51:25 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00009_z=1.5404um.tif Renamed
+
+-------------------------------
+ Entry : 10:53:10 PM Saturday, November 30, 2019
+  :_ 10:53:10 PM--22:38:17 30-Nov-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 10:53:10 PM Saturday, November 30, 2019
+  :_ 10:53:10 PM--22:49:27 30-Nov-2019 : Acquiring slicecell__00009_z=1.5404um.tif
+
+-------------------------------
+ Entry : 10:53:10 PM Saturday, November 30, 2019
+  :_ 10:53:10 PM--We were not able to focus. Focus manually or move to the next sample.
+
+-------------------------------
+ Entry : 10:53:11 PM Saturday, November 30, 2019
+  :_ 10:53:10 PM--22:38:17 30-Nov-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginSend(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at msite.AsynchronousSocketListener.Send(Socket handler, Byte[] byteData) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 298
+   at msite.AsynchronousSocketListener.ReadCallback(IAsyncResult ar) in G:\clemsite-master\CLEMSiteServer\TestApp\Listener.cs:line 190
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:38:17 30-Nov-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:50:48 30-Nov-2019 : Acquiring slicecell__00010_z=1.7404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--STARTING ACQUISITION.
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:49:27 30-Nov-2019 : Acquiring slicecell__00009_z=1.5404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:52:09 30-Nov-2019 : Acquiring slicecell__00011_z=1.9404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:52:09 30-Nov-2019 : Acquiring slicecell__00011_z=1.9404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:38:17 30-Nov-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:49:27 30-Nov-2019 : Acquiring slicecell__00009_z=1.5404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:50:48 30-Nov-2019 : Acquiring slicecell__00010_z=1.7404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:52:09 30-Nov-2019 : Acquiring slicecell__00011_z=1.9404um.tif
+
+-------------------------------
+ Entry : 10:53:20 PM Saturday, November 30, 2019
+  :_ 10:53:20 PM--22:52:09 30-Nov-2019 : Acquiring slicecell__00011_z=1.9404um.tif
+
+-------------------------------
+ Entry : 10:53:25 PM Saturday, November 30, 2019
+  :_ 10:53:25 PM--22:52:09 30-Nov-2019 : Acquiring slicecell__00011_z=1.9404um.tif
+
+-------------------------------
+ Entry : 10:53:30 PM Saturday, November 30, 2019
+  :_ 10:53:30 PM--22:53:29 30-Nov-2019 : FIB Position =2.1423, 0.0000, -414, 34766, 179.824
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:53:32 PM Saturday, November 30, 2019
+  :_ 10:53:32 PM--11/30/2019 10:53:10 PMChanging FOV box.
+FOV moved to position :{X=0, Y=0.25}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00009_z=1.5404um.tif
+
+-------------------------------
+ Entry : 10:53:32 PM Saturday, November 30, 2019
+  :_ 10:53:32 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00010_z=1.7404um.tif Renamed
+
+-------------------------------
+ Entry : 10:53:35 PM Saturday, November 30, 2019
+  :_ 10:53:35 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:53:36 PM Saturday, November 30, 2019
+  :_ 10:53:36 PM--11/30/2019 10:53:32 PMChanging FOV box.
+FOV moved to position :{X=0, Y=0.25}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00010_z=1.7404um.tif
+
+-------------------------------
+ Entry : 10:53:36 PM Saturday, November 30, 2019
+  :_ 10:53:36 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00011_z=1.9404um.tif Renamed
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:53:39 PM Saturday, November 30, 2019
+  :_ 10:53:39 PM--11/30/2019 10:53:36 PMChanging FOV box.
+FOV moved to position :{X=0, Y=0.25}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00011_z=1.9404um.tif
+
+-------------------------------
+ Entry : 10:53:40 PM Saturday, November 30, 2019
+  :_ 10:53:40 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:53:45 PM Saturday, November 30, 2019
+  :_ 10:53:45 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:53:50 PM Saturday, November 30, 2019
+  :_ 10:53:50 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:53:55 PM Saturday, November 30, 2019
+  :_ 10:53:55 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:00 PM Saturday, November 30, 2019
+  :_ 10:54:00 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:05 PM Saturday, November 30, 2019
+  :_ 10:54:05 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:10 PM Saturday, November 30, 2019
+  :_ 10:54:10 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:15 PM Saturday, November 30, 2019
+  :_ 10:54:15 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:20 PM Saturday, November 30, 2019
+  :_ 10:54:20 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:25 PM Saturday, November 30, 2019
+  :_ 10:54:25 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:30 PM Saturday, November 30, 2019
+  :_ 10:54:30 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:35 PM Saturday, November 30, 2019
+  :_ 10:54:35 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:40 PM Saturday, November 30, 2019
+  :_ 10:54:40 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:45 PM Saturday, November 30, 2019
+  :_ 10:54:45 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:48 PM Saturday, November 30, 2019
+  :_ 10:54:48 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00012_z=2.1404um.tif Renamed
+
+-------------------------------
+ Entry : 10:54:50 PM Saturday, November 30, 2019
+  :_ 10:54:50 PM--22:53:30 30-Nov-2019 : Acquiring slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:54:52 PM Saturday, November 30, 2019
+  :_ 10:54:52 PM--11/30/2019 10:54:48 PMChanging FOV box.
+FOV moved to position :{X=0, Y=0.75}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00012_z=2.1404um.tif
+
+-------------------------------
+ Entry : 10:54:55 PM Saturday, November 30, 2019
+  :_ 10:54:55 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:00 PM Saturday, November 30, 2019
+  :_ 10:55:00 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:05 PM Saturday, November 30, 2019
+  :_ 10:55:05 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:10 PM Saturday, November 30, 2019
+  :_ 10:55:10 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:15 PM Saturday, November 30, 2019
+  :_ 10:55:15 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:20 PM Saturday, November 30, 2019
+  :_ 10:55:20 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:25 PM Saturday, November 30, 2019
+  :_ 10:55:25 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:30 PM Saturday, November 30, 2019
+  :_ 10:55:30 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:35 PM Saturday, November 30, 2019
+  :_ 10:55:35 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:40 PM Saturday, November 30, 2019
+  :_ 10:55:40 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:45 PM Saturday, November 30, 2019
+  :_ 10:55:45 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:50 PM Saturday, November 30, 2019
+  :_ 10:55:50 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:55:55 PM Saturday, November 30, 2019
+  :_ 10:55:55 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:56:00 PM Saturday, November 30, 2019
+  :_ 10:56:00 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:56:05 PM Saturday, November 30, 2019
+  :_ 10:56:05 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:56:09 PM Saturday, November 30, 2019
+  :_ 10:56:09 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00013_z=2.3404um.tif Renamed
+
+-------------------------------
+ Entry : 10:56:10 PM Saturday, November 30, 2019
+  :_ 10:56:10 PM--22:54:51 30-Nov-2019 : Acquiring slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:56:13 PM Saturday, November 30, 2019
+  :_ 10:56:13 PM--11/30/2019 10:56:09 PMChanging FOV box.
+FOV moved to position :{X=0, Y=1}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00013_z=2.3404um.tif
+
+-------------------------------
+ Entry : 10:56:15 PM Saturday, November 30, 2019
+  :_ 10:56:15 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:20 PM Saturday, November 30, 2019
+  :_ 10:56:20 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:25 PM Saturday, November 30, 2019
+  :_ 10:56:25 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:30 PM Saturday, November 30, 2019
+  :_ 10:56:30 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:35 PM Saturday, November 30, 2019
+  :_ 10:56:35 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:40 PM Saturday, November 30, 2019
+  :_ 10:56:40 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:45 PM Saturday, November 30, 2019
+  :_ 10:56:45 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:50 PM Saturday, November 30, 2019
+  :_ 10:56:50 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:56:55 PM Saturday, November 30, 2019
+  :_ 10:56:55 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:00 PM Saturday, November 30, 2019
+  :_ 10:57:00 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:05 PM Saturday, November 30, 2019
+  :_ 10:57:05 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:10 PM Saturday, November 30, 2019
+  :_ 10:57:10 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:15 PM Saturday, November 30, 2019
+  :_ 10:57:15 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:20 PM Saturday, November 30, 2019
+  :_ 10:57:20 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:25 PM Saturday, November 30, 2019
+  :_ 10:57:25 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:30 PM Saturday, November 30, 2019
+  :_ 10:57:30 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00014_z=2.5404um.tif Renamed
+
+-------------------------------
+ Entry : 10:57:30 PM Saturday, November 30, 2019
+  :_ 10:57:30 PM--22:56:12 30-Nov-2019 : Acquiring slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:57:35 PM Saturday, November 30, 2019
+  :_ 10:57:35 PM--11/30/2019 10:57:30 PMChanging FOV box.
+FOV moved to position :{X=0, Y=1.25}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00014_z=2.5404um.tif
+
+-------------------------------
+ Entry : 10:57:35 PM Saturday, November 30, 2019
+  :_ 10:57:35 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:57:40 PM Saturday, November 30, 2019
+  :_ 10:57:40 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:57:45 PM Saturday, November 30, 2019
+  :_ 10:57:45 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:57:50 PM Saturday, November 30, 2019
+  :_ 10:57:50 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:57:55 PM Saturday, November 30, 2019
+  :_ 10:57:55 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:00 PM Saturday, November 30, 2019
+  :_ 10:58:00 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:05 PM Saturday, November 30, 2019
+  :_ 10:58:05 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:10 PM Saturday, November 30, 2019
+  :_ 10:58:10 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:15 PM Saturday, November 30, 2019
+  :_ 10:58:15 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:20 PM Saturday, November 30, 2019
+  :_ 10:58:20 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:25 PM Saturday, November 30, 2019
+  :_ 10:58:25 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:30 PM Saturday, November 30, 2019
+  :_ 10:58:30 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:35 PM Saturday, November 30, 2019
+  :_ 10:58:35 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:40 PM Saturday, November 30, 2019
+  :_ 10:58:40 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:45 PM Saturday, November 30, 2019
+  :_ 10:58:45 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:50 PM Saturday, November 30, 2019
+  :_ 10:58:50 PM--22:57:33 30-Nov-2019 : Acquiring slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:51 PM Saturday, November 30, 2019
+  :_ 10:58:51 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00015_z=2.7404um.tif Renamed
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 10:58:56 PM Saturday, November 30, 2019
+  :_ 10:58:56 PM--11/30/2019 10:58:51 PMChanging FOV box.
+FOV moved to position :{X=0, Y=1.5}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00015_z=2.7404um.tif
+
+-------------------------------
+ Entry : 10:58:56 PM Saturday, November 30, 2019
+  :_ 10:58:56 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:00 PM Saturday, November 30, 2019
+  :_ 10:59:00 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:05 PM Saturday, November 30, 2019
+  :_ 10:59:05 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:10 PM Saturday, November 30, 2019
+  :_ 10:59:10 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:15 PM Saturday, November 30, 2019
+  :_ 10:59:15 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:21 PM Saturday, November 30, 2019
+  :_ 10:59:21 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:26 PM Saturday, November 30, 2019
+  :_ 10:59:26 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:31 PM Saturday, November 30, 2019
+  :_ 10:59:31 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:35 PM Saturday, November 30, 2019
+  :_ 10:59:35 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:40 PM Saturday, November 30, 2019
+  :_ 10:59:40 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:45 PM Saturday, November 30, 2019
+  :_ 10:59:45 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:50 PM Saturday, November 30, 2019
+  :_ 10:59:50 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 10:59:55 PM Saturday, November 30, 2019
+  :_ 10:59:55 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 11:00:00 PM Saturday, November 30, 2019
+  :_ 11:00:00 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 11:00:05 PM Saturday, November 30, 2019
+  :_ 11:00:05 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 11:00:10 PM Saturday, November 30, 2019
+  :_ 11:00:10 PM--22:58:54 30-Nov-2019 : Acquiring slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 11:00:12 PM Saturday, November 30, 2019
+  :_ 11:00:12 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00016_z=2.9404um.tif Renamed
+
+-------------------------------
+ Entry : 11:00:15 PM Saturday, November 30, 2019
+  :_ 11:00:15 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:00:17 PM Saturday, November 30, 2019
+  :_ 11:00:17 PM--11/30/2019 11:00:12 PMChanging FOV box.
+FOV moved to position :{X=0, Y=1.75}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00016_z=2.9404um.tif
+
+-------------------------------
+ Entry : 11:00:20 PM Saturday, November 30, 2019
+  :_ 11:00:20 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:25 PM Saturday, November 30, 2019
+  :_ 11:00:25 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:30 PM Saturday, November 30, 2019
+  :_ 11:00:30 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:35 PM Saturday, November 30, 2019
+  :_ 11:00:35 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:40 PM Saturday, November 30, 2019
+  :_ 11:00:40 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:45 PM Saturday, November 30, 2019
+  :_ 11:00:45 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:50 PM Saturday, November 30, 2019
+  :_ 11:00:50 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:00:56 PM Saturday, November 30, 2019
+  :_ 11:00:56 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:00 PM Saturday, November 30, 2019
+  :_ 11:01:00 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:06 PM Saturday, November 30, 2019
+  :_ 11:01:06 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:11 PM Saturday, November 30, 2019
+  :_ 11:01:11 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:15 PM Saturday, November 30, 2019
+  :_ 11:01:15 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:20 PM Saturday, November 30, 2019
+  :_ 11:01:20 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:25 PM Saturday, November 30, 2019
+  :_ 11:01:25 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:31 PM Saturday, November 30, 2019
+  :_ 11:01:31 PM--23:00:15 30-Nov-2019 : Acquiring slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:33 PM Saturday, November 30, 2019
+  :_ 11:01:33 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00017_z=3.1404um.tif Renamed
+
+-------------------------------
+ Entry : 11:01:35 PM Saturday, November 30, 2019
+  :_ 11:01:35 PM--23:01:35 30-Nov-2019 : FIB Position =3.3450, 0.0000, -647, 34533, 178.619
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:01:38 PM Saturday, November 30, 2019
+  :_ 11:01:38 PM--11/30/2019 11:01:33 PMChanging FOV box.
+FOV moved to position :{X=0, Y=2}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00017_z=3.1404um.tif
+
+-------------------------------
+ Entry : 11:01:40 PM Saturday, November 30, 2019
+  :_ 11:01:40 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:01:45 PM Saturday, November 30, 2019
+  :_ 11:01:45 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:01:50 PM Saturday, November 30, 2019
+  :_ 11:01:50 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:01:55 PM Saturday, November 30, 2019
+  :_ 11:01:55 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:00 PM Saturday, November 30, 2019
+  :_ 11:02:00 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:05 PM Saturday, November 30, 2019
+  :_ 11:02:05 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:11 PM Saturday, November 30, 2019
+  :_ 11:02:11 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:16 PM Saturday, November 30, 2019
+  :_ 11:02:16 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:21 PM Saturday, November 30, 2019
+  :_ 11:02:21 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:26 PM Saturday, November 30, 2019
+  :_ 11:02:26 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:30 PM Saturday, November 30, 2019
+  :_ 11:02:30 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:35 PM Saturday, November 30, 2019
+  :_ 11:02:35 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:40 PM Saturday, November 30, 2019
+  :_ 11:02:40 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:45 PM Saturday, November 30, 2019
+  :_ 11:02:45 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:50 PM Saturday, November 30, 2019
+  :_ 11:02:50 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:02:54 PM Saturday, November 30, 2019
+  :_ 11:02:54 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00018_z=3.3404um.tif Renamed
+
+-------------------------------
+ Entry : 11:02:55 PM Saturday, November 30, 2019
+  :_ 11:02:55 PM--23:01:36 30-Nov-2019 : Acquiring slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:03:00 PM Saturday, November 30, 2019
+  :_ 11:03:00 PM--11/30/2019 11:02:54 PMChanging FOV box.
+FOV moved to position :{X=0, Y=2.25}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00018_z=3.3404um.tif
+
+-------------------------------
+ Entry : 11:03:01 PM Saturday, November 30, 2019
+  :_ 11:03:01 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:05 PM Saturday, November 30, 2019
+  :_ 11:03:05 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:11 PM Saturday, November 30, 2019
+  :_ 11:03:11 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:15 PM Saturday, November 30, 2019
+  :_ 11:03:15 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:20 PM Saturday, November 30, 2019
+  :_ 11:03:20 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:25 PM Saturday, November 30, 2019
+  :_ 11:03:25 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:31 PM Saturday, November 30, 2019
+  :_ 11:03:31 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:36 PM Saturday, November 30, 2019
+  :_ 11:03:36 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:41 PM Saturday, November 30, 2019
+  :_ 11:03:41 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:46 PM Saturday, November 30, 2019
+  :_ 11:03:46 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:51 PM Saturday, November 30, 2019
+  :_ 11:03:51 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:03:56 PM Saturday, November 30, 2019
+  :_ 11:03:56 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:04:01 PM Saturday, November 30, 2019
+  :_ 11:04:01 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:04:06 PM Saturday, November 30, 2019
+  :_ 11:04:06 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:04:11 PM Saturday, November 30, 2019
+  :_ 11:04:11 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:04:16 PM Saturday, November 30, 2019
+  :_ 11:04:16 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00019_z=3.5404um.tif Renamed
+
+-------------------------------
+ Entry : 11:04:16 PM Saturday, November 30, 2019
+  :_ 11:04:16 PM--23:02:57 30-Nov-2019 : Acquiring slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:04:21 PM Saturday, November 30, 2019
+  :_ 11:04:21 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:04:21 PM Saturday, November 30, 2019
+  :_ 11:04:21 PM--11/30/2019 11:04:16 PMChanging FOV box.
+FOV moved to position :{X=0, Y=2.5}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00019_z=3.5404um.tif
+
+-------------------------------
+ Entry : 11:04:26 PM Saturday, November 30, 2019
+  :_ 11:04:26 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:04:31 PM Saturday, November 30, 2019
+  :_ 11:04:31 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:04:36 PM Saturday, November 30, 2019
+  :_ 11:04:36 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:04:41 PM Saturday, November 30, 2019
+  :_ 11:04:41 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:04:46 PM Saturday, November 30, 2019
+  :_ 11:04:46 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:04:51 PM Saturday, November 30, 2019
+  :_ 11:04:51 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:04:56 PM Saturday, November 30, 2019
+  :_ 11:04:56 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:01 PM Saturday, November 30, 2019
+  :_ 11:05:01 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:06 PM Saturday, November 30, 2019
+  :_ 11:05:06 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:11 PM Saturday, November 30, 2019
+  :_ 11:05:11 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:16 PM Saturday, November 30, 2019
+  :_ 11:05:16 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:21 PM Saturday, November 30, 2019
+  :_ 11:05:21 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:26 PM Saturday, November 30, 2019
+  :_ 11:05:26 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:31 PM Saturday, November 30, 2019
+  :_ 11:05:31 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:36 PM Saturday, November 30, 2019
+  :_ 11:05:36 PM--23:04:18 30-Nov-2019 : Acquiring slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:37 PM Saturday, November 30, 2019
+  :_ 11:05:37 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00020_z=3.7404um.tif Renamed
+
+-------------------------------
+ Entry : 11:05:41 PM Saturday, November 30, 2019
+  :_ 11:05:41 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:05:42 PM Saturday, November 30, 2019
+  :_ 11:05:42 PM--11/30/2019 11:05:37 PMChanging FOV box.
+FOV moved to position :{X=0, Y=2.75}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00020_z=3.7404um.tif
+
+-------------------------------
+ Entry : 11:05:46 PM Saturday, November 30, 2019
+  :_ 11:05:46 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:05:51 PM Saturday, November 30, 2019
+  :_ 11:05:51 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:05:56 PM Saturday, November 30, 2019
+  :_ 11:05:56 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:01 PM Saturday, November 30, 2019
+  :_ 11:06:01 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:06 PM Saturday, November 30, 2019
+  :_ 11:06:06 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:11 PM Saturday, November 30, 2019
+  :_ 11:06:11 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:16 PM Saturday, November 30, 2019
+  :_ 11:06:16 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:21 PM Saturday, November 30, 2019
+  :_ 11:06:21 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:26 PM Saturday, November 30, 2019
+  :_ 11:06:26 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:31 PM Saturday, November 30, 2019
+  :_ 11:06:31 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:36 PM Saturday, November 30, 2019
+  :_ 11:06:36 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:41 PM Saturday, November 30, 2019
+  :_ 11:06:41 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:46 PM Saturday, November 30, 2019
+  :_ 11:06:46 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:51 PM Saturday, November 30, 2019
+  :_ 11:06:51 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:56 PM Saturday, November 30, 2019
+  :_ 11:06:56 PM--23:05:39 30-Nov-2019 : Acquiring slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:06:58 PM Saturday, November 30, 2019
+  :_ 11:06:58 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00021_z=3.9404um.tif Renamed
+
+-------------------------------
+ Entry : 11:07:01 PM Saturday, November 30, 2019
+  :_ 11:07:01 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:07:04 PM Saturday, November 30, 2019
+  :_ 11:07:04 PM--11/30/2019 11:06:58 PMChanging FOV box.
+FOV moved to position :{X=0, Y=3}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00021_z=3.9404um.tif
+
+-------------------------------
+ Entry : 11:07:06 PM Saturday, November 30, 2019
+  :_ 11:07:06 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:11 PM Saturday, November 30, 2019
+  :_ 11:07:11 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:16 PM Saturday, November 30, 2019
+  :_ 11:07:16 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:21 PM Saturday, November 30, 2019
+  :_ 11:07:21 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:26 PM Saturday, November 30, 2019
+  :_ 11:07:26 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:31 PM Saturday, November 30, 2019
+  :_ 11:07:31 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:36 PM Saturday, November 30, 2019
+  :_ 11:07:36 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:41 PM Saturday, November 30, 2019
+  :_ 11:07:41 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:46 PM Saturday, November 30, 2019
+  :_ 11:07:46 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:51 PM Saturday, November 30, 2019
+  :_ 11:07:51 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:07:56 PM Saturday, November 30, 2019
+  :_ 11:07:56 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:08:01 PM Saturday, November 30, 2019
+  :_ 11:08:01 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:08:06 PM Saturday, November 30, 2019
+  :_ 11:08:06 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:08:11 PM Saturday, November 30, 2019
+  :_ 11:08:11 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:08:16 PM Saturday, November 30, 2019
+  :_ 11:08:16 PM--23:07:00 30-Nov-2019 : Acquiring slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:08:19 PM Saturday, November 30, 2019
+  :_ 11:08:19 PM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00022_z=4.1404um.tif Renamed
+
+-------------------------------
+ Entry : 11:08:21 PM Saturday, November 30, 2019
+  :_ 11:08:21 PM--23:08:21 30-Nov-2019 : FIB Position =4.3471, 0.0000, -840, 34340, 177.621
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 11:08:25 PM Saturday, November 30, 2019
+  :_ 11:08:25 PM--11/30/2019 11:08:19 PMChanging FOV box.
+FOV moved to position :{X=0, Y=3.25}Check Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_47889___0003\NO_ID_47889___0003__ACQ\slicecell__00022_z=4.1404um.tif
+
+-------------------------------
+ Entry : 11:08:26 PM Saturday, November 30, 2019
+  :_ 11:08:26 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:08:31 PM Saturday, November 30, 2019
+  :_ 11:08:31 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:08:36 PM Saturday, November 30, 2019
+  :_ 11:08:36 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:08:41 PM Saturday, November 30, 2019
+  :_ 11:08:41 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:08:46 PM Saturday, November 30, 2019
+  :_ 11:08:46 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:08:51 PM Saturday, November 30, 2019
+  :_ 11:08:51 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:08:56 PM Saturday, November 30, 2019
+  :_ 11:08:56 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:09:02 PM Saturday, November 30, 2019
+  :_ 11:09:02 PM--23:08:21 30-Nov-2019 : Acquiring slicecell__00023_z=4.3404um.tif
+
+-------------------------------
+ Entry : 11:09:03 PM Saturday, November 30, 2019
+  :_ 11:09:03 PM--RUN CANCELLED.
+
+-------------------------------
+ Entry : 11:10:21 PM Saturday, November 30, 2019
+  :_ 11:10:21 PM--API not initialized. A client has to connect first. 
+
+
+-------------------------------
+ Entry : 11:10:34 PM Saturday, November 30, 2019
+  :_ 11:10:34 PM--Connected.
+Initialization of Engine Completed. 
+Initialization success. Connected.
+
+
+-------------------------------
+Method Connect. Reply:{
+  "Connection": "Accepted",
+  "Status": "Connected"
+}
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 11:13:04 PM Saturday, November 30, 2019
+  :_ 11:13:04 PM--Current state SEM using aperture:1.5 kV | 700 pA [An] Stigmators X,Y-0.227551653981209,-0.00661491556093097
+ Beam shift at X,Y0,0
+ WD at4876.15261226892 um
+ Changing B&C SEM in SESI mode: B -50.03 - C -19.93376
+Restoring position toX :-40629.9804303704,Y :-71634.3360261142,Z :41478.6221462464,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+State loaded.
+
+-------------------------------
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 11:14:52 PM Saturday, November 30, 2019
+  :_ 11:14:52 PM--Current state SEM using aperture:1.5 kV | 700 pA [An] Stigmators X,Y-0.227551653981209,-0.00661491556093097
+ Beam shift at X,Y0,0
+ WD at4876.15261226892 um
+ Changing B&C SEM in SESI mode: B -50.03 - C -19.93376
+Restoring position toX :-40629.9804303704,Y :-71634.3360261142,Z :41478.6221462464,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+State loaded.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 11:14:56 PM Saturday, November 30, 2019
+  :_ 11:14:56 PM--Moved to position: X :-40476.562,Y :-71373.85,Z :41478.6221462464,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Executing GetCenterSquare :C:\Users\Owner\Anaconda3\python.exe G:\clemsite-master\CLEMSiteServer\TestApp\bin\x64\Debug\automaton\findCentroidSquare.py G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_50802___0004\coincidence_point_checks\SEM_1st_original_-2019-11-30_11-15-59-PM.tif G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_50802___0004\coincidence_point_checks\SEM_1st_square_burned_-2019-11-30_11-15-59-PM.tif -2019-11-30_11-15-59-PM
+Centroid of square found 0
+System.IO.FileNotFoundException: Could not find file 'G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_50802___0004\coincidence_point_checks\data_square_-2019-11-30_11-15-59-PM.csv'.
+File name: 'G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_50802___0004\coincidence_point_checks\data_square_-2019-11-30_11-15-59-PM.csv'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at msite.ImageHelper.getCenterSquare(String tag, String image_SEM_before, String image_SEM_after, String img_folder, Double& center_x, Double& center_y, Single pixelsize) in G:\clemsite-master\CLEMSiteServer\TestApp\ImageHelper.cs:line 74
+ Entry : 11:17:45 PM Saturday, November 30, 2019
+  :_ 11:17:45 PM--ERROR 002:Imaging error, square not detected. Cancelling auto CP.
+
+-------------------------------
+ Entry : 11:17:45 PM Saturday, November 30, 2019
+  :_ 11:17:45 PM--Swapping CP position and trying again.
+
+-------------------------------
+ Entry : 11:17:47 PM Saturday, November 30, 2019
+  :_ 11:17:47 PM--Moved to position: X :-40326.562,Y :-71373.85,Z :41533.435897971,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 11:18:49 PM Saturday, November 30, 2019
+  :_ 11:18:49 PM--Focus Failed in first attempt.
+
+-------------------------------
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Executing GetCenterSquare :C:\Users\Owner\Anaconda3\python.exe G:\clemsite-master\CLEMSiteServer\TestApp\bin\x64\Debug\automaton\findCentroidSquare.py G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_50802___0004\coincidence_point_checks\SEM_1st_original_-2019-11-30_11-19-33-PM.tif G:\Acquisitions\29Nov19\29_Nov_test\NO_ID_50802___0004\coincidence_point_checks\SEM_1st_square_burned_-2019-11-30_11-19-33-PM.tif -2019-11-30_11-19-33-PM
+Centroid of square found 0
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam FIB
+Beam set to FIB
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50,27.6125
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 11:23:53 PM Saturday, November 30, 2019
+  :_ 11:23:53 PM--Coincidence point finished.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 11:24:18 PM Saturday, November 30, 2019
+  :_ 11:24:18 PM--Corrected position to:X :-40416.7624988107,Y :-71384.8590804516,Z :41484.5449220207,T :0.942477733254468,M :5.24787699590382,R :1.15369902813098
+
+
+-------------------------------
+ Entry : 11:24:18 PM Saturday, November 30, 2019
+  :_ 11:24:18 PM--Updating position finished
+
+-------------------------------
+ Entry : 11:24:18 PM Saturday, November 30, 2019
+  :_ 11:24:18 PM--Success
+
+-------------------------------
+ Entry : 11:24:18 PM Saturday, November 30, 2019
+  :_ 11:24:18 PM--Coincidence point and autofocus on region finished.
+
+-------------------------------
+ Entry : 11:24:18 PM Saturday, November 30, 2019
+  :_ 11:24:18 PM--Preparing trenches.
+
+-------------------------------
+ Entry : 11:24:18 PM Saturday, November 30, 2019
+  :_ 11:24:18 PM--View changed to -36 degrees
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 11:24:35 PM Saturday, November 30, 2019
+  :_ 11:24:35 PM--Digging trenches for NO_ID_50802___0004
+
+-------------------------------
+ Entry : 11:24:41 PM Saturday, November 30, 2019
+  :_ 11:24:41 PM--Starting COARSE trench.
+
+-------------------------------
+ Entry : 11:43:04 PM Saturday, November 30, 2019
+  :_ 11:43:04 PM--COARSE trench job completed.
+
+-------------------------------
+ Entry : 11:43:06 PM Saturday, November 30, 2019
+  :_ 11:43:06 PM--Starting fine trench.
+
+-------------------------------
+ Entry : 11:46:03 PM Saturday, November 30, 2019
+  :_ 11:46:03 PM--FINE trench job completed
+
+-------------------------------
+ Entry : 11:46:08 PM Saturday, November 30, 2019
+  :_ 11:46:08 PM--Detecting trench.
+
+-------------------------------
+ Entry : 11:46:13 PM Saturday, November 30, 2019
+  :_ 11:46:13 PM--View changed to -36 degrees
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 11:46:54 PM Saturday, November 30, 2019
+  :_ 11:46:54 PM--Trench detected.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 11:47:47 PM Saturday, November 30, 2019
+  :_ 11:47:47 PM--ESB final values:18.36501,59.265
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:25.37,53.26
+ Entry : 11:48:25 PM Saturday, November 30, 2019
+  :_ 11:48:25 PM--Original wd is :4912.00853139162
+  Original stigs are:-0.355904817581177,0.0907426849007607
+
+-------------------------------
+ Entry : 11:49:42 PM Saturday, November 30, 2019
+  :_ 11:49:42 PM--AFAS first attempt COARSE, new wd:4937.55238130689
+ AFAS success first attempt COARSE, new stigmators are:0.102923154830933,0.180707186460495
+
+-------------------------------
+ Entry : 11:51:59 PM Saturday, November 30, 2019
+  :_ 11:51:59 PM--Stig Failed in first attempt.
+
+-------------------------------
+ Entry : 11:54:14 PM Saturday, November 30, 2019
+  :_ 11:54:14 PM--We were not able to autostig. Focus manually or move to the next sample.
+ MEDIUM AFAS failed.
+ Focus failed in first attempt.
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector SE2 set to channel 0.
+Channel 0 set B&C to:50.03,19.93376
+ Entry : 11:54:49 PM Saturday, November 30, 2019
+  :_ 11:54:49 PM--Original wd is :4937.55238130689
+  Original stigs are:0.102923154830933,0.180707186460495
+
+-------------------------------
+ Entry : 11:56:13 PM Saturday, November 30, 2019
+  :_ 11:56:13 PM--AFAS first attempt COARSE, new wd:4935.75306609273
+ AFAS success first attempt COARSE, new stigmators are:0.114816248416901,0.0227838717401028
+
+-------------------------------
+ Entry : 11:58:19 PM Saturday, November 30, 2019
+  :_ 11:58:19 PM--Stig Failed in first attempt.
+
+-------------------------------
+ Entry : 12:00:34 AM Sunday, December 01, 2019
+  :_ 12:00:34 AM--AFAS first attempt MEDIUM, new wd:4954.96951043606
+ AFAS success first attempt MEDIUM, new stigmators are:-0.353301256895065,-0.227350950241089
+
+-------------------------------
+ Entry : 12:02:37 AM Sunday, December 01, 2019
+  :_ 12:02:37 AM--AFAS first attempt MEDIUM 2nd part, new wd:4953.99301871657
+ AFAS success first attempt MEDIUM 2nd part, new stigmators are:-0.469071865081787,-0.277151197195053
+
+-------------------------------
+ Entry : 12:05:14 AM Sunday, December 01, 2019
+  :_ 12:05:14 AM--AFAS first attempt FINE, new wd:4949.38995689154
+ AFAS success first attempt FINE, new stigmators are:-0.540259480476379,-0.30058366060257
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:25.37,53.26
+ Entry : 12:05:35 AM Sunday, December 01, 2019
+  :_ 12:05:35 AM--We were not able to autostig. Focus manually or move to the next sample.
+ MEDIUM AFAS failed.
+ Focus failed in first attempt.
+
+-------------------------------
+ Entry : 12:05:35 AM Sunday, December 01, 2019
+  :_ 12:05:35 AM--We were not able to autostig. Focus manually or move to the next sample.
+ MEDIUM AFAS failed.
+ Focus failed in first attempt.
+
+-------------------------------
+ Entry : 12:05:35 AM Sunday, December 01, 2019
+  :_ 12:05:35 AM--Trenches ready, ready to acquire.
+
+-------------------------------
+ Entry : 12:05:35 AM Sunday, December 01, 2019
+  :_ 12:05:35 AM--Starting acquisition of NO_ID_50802___0004
+
+-------------------------------
+Setting beam SEM
+Beam set to SEM
+Detector ESB set to channel 0.
+Channel 0 set B&C to:18.36501,59.265
+ Entry : 12:05:37 AM Sunday, December 01, 2019
+  :_ 12:05:37 AM--{
+  "job_number": 1,
+  "job_state": "STARTING",
+  "roi_y_length": 15.0,
+  "roi_x_length": 19.0,
+  "roi_depth": 30.0,
+  "job_folder": "G:\\Acquisitions\\29Nov19\\29_Nov_test\\NO_ID_50802___0004",
+  "job_name": "NO_ID_50802___0004",
+  "project_folder": "G:\\Acquisitions\\29Nov19",
+  "local_setup_file": "G:/clemsite-master/CLEMSite/msite4A/resources/setups/25_25_200_8nm_COPB1_0706_good.a3d-setup",
+  "tag": "NO_ID_50802",
+  "SliceThickness": 0.2,
+  "dX": 40.0,
+  "dY": 29.5,
+  "setup_file": "G:\\Acquisitions\\29Nov19\\29_Nov_test\\NO_ID_50802___0004\\25_25_200_8nm_COPB1_0706_good.a3d-setup",
+  "unit_scale": "micrometer",
+  "x": -40416.762498810676,
+  "y": -71384.859080451628,
+  "z": 41484.5449220207,
+  "DefaultStabilizationDuration": 300000,
+  "AF_interval": 1800000
+}
+
+-------------------------------
+ Entry : 12:05:40 AM Sunday, December 01, 2019
+  :_ 12:05:40 AM--ROI Width: 19, Height:15
+ OffsetX :0, OffsetY :0
+
+-------------------------------
+ Entry : 12:05:40 AM Sunday, December 01, 2019
+  :_ 12:05:40 AM--Message timer active.
+
+-------------------------------
+ Entry : 12:06:40 AM Sunday, December 01, 2019
+  :_ 12:06:40 AM--Blackwatcher is active.
+
+-------------------------------
+ Entry : 12:06:40 AM Sunday, December 01, 2019
+  :_ 12:06:40 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:40 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--We were not able to autostig. Focus manually or move to the next sample.
+ MEDIUM AFAS failed.
+ Focus failed in first attempt.
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--STARTING ACQUISITION.
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:41 AM Sunday, December 01, 2019
+  :_ 12:06:41 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:46 AM Sunday, December 01, 2019
+  :_ 12:06:46 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:51 AM Sunday, December 01, 2019
+  :_ 12:06:51 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:06:56 AM Sunday, December 01, 2019
+  :_ 12:06:56 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:07:01 AM Sunday, December 01, 2019
+  :_ 12:07:01 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:07:06 AM Sunday, December 01, 2019
+  :_ 12:07:06 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:07:11 AM Sunday, December 01, 2019
+  :_ 12:07:11 AM--00:05:55 01-Dec-2019 : Acquiring slicecell__00001_z=0.0000um.tif
+
+-------------------------------
+ Entry : 12:07:16 AM Sunday, December 01, 2019
+  :_ 12:07:16 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:21 AM Sunday, December 01, 2019
+  :_ 12:07:21 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:26 AM Sunday, December 01, 2019
+  :_ 12:07:26 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:31 AM Sunday, December 01, 2019
+  :_ 12:07:31 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:32 AM Sunday, December 01, 2019
+  :_ 12:07:32 AM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_50802___0004\NO_ID_50802___0004__ACQ\slicecell__00002_z=0.1916um.tif Renamed
+
+-------------------------------
+ Entry : 12:07:36 AM Sunday, December 01, 2019
+  :_ 12:07:36 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:41 AM Sunday, December 01, 2019
+  :_ 12:07:41 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 12:07:41 AM Sunday, December 01, 2019
+  :_ 12:07:41 AM--12/1/2019 12:07:32 AMCheck Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_50802___0004\NO_ID_50802___0004__ACQ\slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:46 AM Sunday, December 01, 2019
+  :_ 12:07:46 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:51 AM Sunday, December 01, 2019
+  :_ 12:07:51 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:07:56 AM Sunday, December 01, 2019
+  :_ 12:07:56 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:01 AM Sunday, December 01, 2019
+  :_ 12:08:01 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:06 AM Sunday, December 01, 2019
+  :_ 12:08:06 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:11 AM Sunday, December 01, 2019
+  :_ 12:08:11 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:16 AM Sunday, December 01, 2019
+  :_ 12:08:16 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:21 AM Sunday, December 01, 2019
+  :_ 12:08:21 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:26 AM Sunday, December 01, 2019
+  :_ 12:08:26 AM--00:07:12 01-Dec-2019 : Acquiring slicecell__00002_z=0.1916um.tif
+
+-------------------------------
+ Entry : 12:08:31 AM Sunday, December 01, 2019
+  :_ 12:08:31 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:08:36 AM Sunday, December 01, 2019
+  :_ 12:08:36 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:08:41 AM Sunday, December 01, 2019
+  :_ 12:08:41 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:08:46 AM Sunday, December 01, 2019
+  :_ 12:08:46 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:08:49 AM Sunday, December 01, 2019
+  :_ 12:08:49 AM--File: G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_50802___0004\NO_ID_50802___0004__ACQ\slicecell__00003_z=0.3832um.tif Renamed
+
+-------------------------------
+ Entry : 12:08:51 AM Sunday, December 01, 2019
+  :_ 12:08:51 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+File runcheck.csv Not found. Cancelling Automaton actions.
+ Entry : 12:08:55 AM Sunday, December 01, 2019
+  :_ 12:08:55 AM--12/1/2019 12:08:49 AMCheck Succeeded for G:\ACQUISITIONS\29NOV19\29_NOV_TEST\NO_ID_50802___0004\NO_ID_50802___0004__ACQ\slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:08:56 AM Sunday, December 01, 2019
+  :_ 12:08:56 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:01 AM Sunday, December 01, 2019
+  :_ 12:09:01 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:06 AM Sunday, December 01, 2019
+  :_ 12:09:06 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:11 AM Sunday, December 01, 2019
+  :_ 12:09:11 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:16 AM Sunday, December 01, 2019
+  :_ 12:09:16 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:21 AM Sunday, December 01, 2019
+  :_ 12:09:21 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:26 AM Sunday, December 01, 2019
+  :_ 12:09:26 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:31 AM Sunday, December 01, 2019
+  :_ 12:09:31 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:36 AM Sunday, December 01, 2019
+  :_ 12:09:36 AM--00:08:29 01-Dec-2019 : Acquiring slicecell__00003_z=0.3832um.tif
+
+-------------------------------
+ Entry : 12:09:41 AM 

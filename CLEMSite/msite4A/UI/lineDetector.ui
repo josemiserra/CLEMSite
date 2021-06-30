@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetectionDialog</class>
+ <widget class="QDialog" name="DetectionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Detection</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>1101</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="labelOrientation">
+          <property name="text">
+           <string>Orientation: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAup">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/res/Aup.png</normaloff>:/res/Aup.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAdown">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/res/Adown.png</normaloff>:/res/Adown.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAright">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/res/Aright.png</normaloff>:/res/Aright.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAleft">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/res/Aleft.png</normaloff>:/res/Aleft.png</iconset>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>50</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="1">
+         <widget class="QProgressBar" name="progressBar">
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButtonLD">
+          <property name="text">
+           <string>Line Detection</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButtonGrab">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Grab</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_letter">
+          <property name="text">
+           <string>Your letter is:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox"/>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_Points">
+          <property name="text">
+           <string>Points Detected :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="tableViewPoints"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDialogButtonBox" name="buttonBox">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>tableViewPoints</zorder>
+  <zorder>label_Points</zorder>
+  <zorder>splitter</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>splitter_2</zorder>
+  <zorder>labelOrientation</zorder>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

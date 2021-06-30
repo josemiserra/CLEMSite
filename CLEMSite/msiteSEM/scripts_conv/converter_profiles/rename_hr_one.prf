@@ -1,0 +1,37 @@
+[
+    {
+        "name": "nucleus--LM--DAPI--40x--z2", 
+        "re": ".*.*--J23--.*--C00.*.*", 
+        "separated": true
+    }, 
+    {
+        "name": "golgi--LM--GFP--40x--z2", 
+        "re": ".*.*--J23--.*--C01.*.*", 
+        "separated": true
+    }, 
+    {
+        "name": "nucleus--LM--DAPI--10x--z1", 
+        "re": ".*.*--J24--.*--C00.*.*", 
+        "separated": false
+    }, 
+    {
+        "name": "golgi--LM--GFP--10x--z1", 
+        "re": ".*.*--J24--.*--C01.*.*", 
+        "separated": false
+    }, 
+    {
+        "name": "grid--LM--RL - Reflected Light--10x--z1", 
+        "re": ".*.*--J25--.*--C00.*", 
+        "separated": false
+    }, 
+    {
+        "name": "cells--LM--TL -Transmited Light--10x--z1", 
+        "re": ".*.*--J24--.*--C02.*.*", 
+        "separated": false
+    }, 
+    {
+        "name": "spot--LM--RFP--10x--z1", 
+        "re": ".*.*--J13--.*--C02.*.*", 
+        "separated": false
+    }
+]

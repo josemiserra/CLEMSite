@@ -1,0 +1,16 @@
+C:\CServer\LBIndustrialCtrls\bin\Release\LBIndustrialCtrls.dll
+C:\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Buttons.LBButton.resources
+C:\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Knobs.LBKnob.resources
+C:\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Leds.LBLed.resources
+C:\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Leds.LB7SegmentDisplay.resources
+C:\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Meters.LBDigitalMeter.resources
+C:\CServer\LBIndustrialCtrls\obj\Release\LBIndustrialCtrls.csproj.GenerateResource.Cache
+C:\CServer\LBIndustrialCtrls\obj\Release\LBIndustrialCtrls.dll
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\bin\Release\LBIndustrialCtrls.dll
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Buttons.LBButton.resources
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Knobs.LBKnob.resources
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Leds.LBLed.resources
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Leds.LB7SegmentDisplay.resources
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBSoft.IndustrialCtrls.Meters.LBDigitalMeter.resources
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBIndustrialCtrls.csproj.GenerateResource.Cache
+C:\Users\JMS\Documents\msiteserver\CServer\LBIndustrialCtrls\obj\Release\LBIndustrialCtrls.dll

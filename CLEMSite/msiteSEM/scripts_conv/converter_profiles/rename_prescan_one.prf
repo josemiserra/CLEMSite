@@ -1,0 +1,17 @@
+[
+    {
+        "name": "prescan--nucleus--LM--DAPI--10x--z0", 
+        "re": ".*.*J18.*--C00.*.*", 
+        "separated": false
+    }, 
+    {
+        "name": "prescan--golgi--LM--GFP--10x--z0", 
+        "re": ".*.*J18.*--C01.*.*", 
+        "separated": false
+    }, 
+    {
+        "name": "prescan--TL--LM--RFP--10x--z0", 
+        "re": ".*.*J18.*--C02.*.*", 
+        "separated": false
+    }
+]

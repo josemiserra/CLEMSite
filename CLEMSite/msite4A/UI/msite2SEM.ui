@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MSiteSEM</class>
+ <widget class="QMainWindow" name="MSiteSEM">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1299</width>
+    <height>859</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MSite2 SEM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/res/msite.ico</normaloff>:/res/msite.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-color: rgb(85, 170, 255);
+color: rgb(0, 28, 132);</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>520</y>
+      <width>531</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Error Measurements</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>401</width>
+       <height>109</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_4">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Algorithm:     </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_Algo">
+        <item>
+         <property name="text">
+          <string>Homography</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Least Squares</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Point to Point</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Calculated Error:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_Error">
+        <property name="text">
+         <string>0.0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_radius">
+        <item>
+         <widget class="QLabel" name="label_Radius">
+          <property name="text">
+           <string>Radius:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_radius">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_Radius">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSlider" name="horizontalSlider_radius">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="invertedAppearance">
+         <bool>false</bool>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBelow</enum>
+        </property>
+        <property name="tickInterval">
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>20</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../resources.qrc">:/res/tattoo_machine.ico</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_PointsList">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>160</y>
+      <width>711</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Grid Coordinates</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>691</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_lm">
+         <attribute name="title">
+          <string>LM Coordinates</string>
+         </attribute>
+         <widget class="QTableWidget" name="tablePointsLM">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>691</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 255, 255);</string>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="cornerButtonEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="rowCount">
+           <number>2</number>
+          </property>
+          <property name="columnCount">
+           <number>4</number>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>150</number>
+          </attribute>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>Name</string>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>X</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Y</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Z</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_sem">
+         <attribute name="title">
+          <string>SEM Coordinates</string>
+         </attribute>
+         <widget class="QTableWidget" name="tablePointsSEM">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>691</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(242, 255, 255);</string>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="rowCount">
+           <number>2</number>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>120</number>
+          </attribute>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>Name</string>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>X</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Y</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Z</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Error</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Rp Error</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetNoConstraint</enum>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_Mode">
+          <property name="text">
+           <string>Mode: OFF</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelScale">
+          <property name="text">
+           <string>Scale: not changed</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_Reset">
+          <property name="text">
+           <string>Reset</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonGrid">
+          <property name="text">
+           <string>Edit Grid</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_Options">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_LoadLM">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>30</y>
+      <width>271</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>246</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_Correct">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources.qrc">
+          <normaloff>:/res/ruler_square.ico</normaloff>:/res/ruler_square.ico</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButton_Acquire">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources.qrc">
+          <normaloff>:/res/flag_green.png</normaloff>:/res/flag_green.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_GiveReference">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources.qrc">
+          <normaloff>:/res/flag_red.png</normaloff>:/res/flag_red.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="MplWidget" name="gridView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>531</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>531</width>
+      <height>481</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;In this grid, you can travel through your sample. &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Load your points coming from your Light Microscopy, and then go on them with the microscope.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Only after you have 5 points, you can move anywhere in the grid just double clicking on it.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: black;</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxServer">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>30</y>
+      <width>309</width>
+      <height>128</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SEM Server</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="hostLineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ip address of SEM Server&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhDigitsOnly</set>
+         </property>
+         <property name="inputMask">
+          <string>000.000.000.000; </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="portLineEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Port of your server&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhDigitsOnly</set>
+           </property>
+           <property name="inputMask">
+            <string>00000; </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>100</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <widget class="QPushButton" name="pushButton_Connect">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Connect</string>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_Disconnect">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Disconnect</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Connect">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>7</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Not connected       </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Led">
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../resources.qrc">:/res/LedNone.ico</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1299</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Load_coordinates_Calibration"/>
+    <addaction name="action_Load_coordinates_Target"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save_coordinates_SEM"/>
+    <addaction name="actionSave_coordinates_SEM_as"/>
+    <addaction name="action_Save_coordinates_LM"/>
+    <addaction name="action_Save_coordinates_Error"/>
+    <addaction name="actionSave_coordinates_Error_as"/>
+   </widget>
+   <widget class="QMenu" name="menu_Actions">
+    <property name="title">
+     <string>&amp;Actions</string>
+    </property>
+    <addaction name="action_Give_Reference"/>
+    <addaction name="action_Correct_Position"/>
+    <addaction name="action_Acquire"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionCross_Detection"/>
+    <addaction name="actionCell_Shape_Detection"/>
+    <addaction name="actionNavigate"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Plot">
+    <property name="title">
+     <string>&amp;Plot</string>
+    </property>
+    <addaction name="action_Plot_Error"/>
+    <addaction name="action_Tiles_Map"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="action_Options"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Actions"/>
+   <addaction name="menu"/>
+   <addaction name="menu_Plot"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Load_coordinates_Calibration"/>
+   <addaction name="action_Load_coordinates_Target"/>
+   <addaction name="separator"/>
+   <addaction name="action_Save_coordinates_SEM"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Give_Reference"/>
+   <addaction name="action_Correct_Position"/>
+   <addaction name="separator"/>
+   <addaction name="actionDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actionCross_Detection"/>
+   <addaction name="separator"/>
+   <addaction name="actionNavigate"/>
+   <addaction name="actionCell_Shape_Detection"/>
+   <addaction name="action_Tiles_Map"/>
+   <addaction name="action_Plot_Error"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_Load_coordinates_Calibration">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/coord_red.png</normaloff>:/res/coord_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Load coordinates Calibration</string>
+   </property>
+  </action>
+  <action name="action_Load_coordinates_Target">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/coord_green.png</normaloff>:/res/coord_green.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Load coordinates Target</string>
+   </property>
+  </action>
+  <action name="action_Save_coordinates_SEM">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/save.ico</normaloff>:/res/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save coordinates SEM</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Save_coordinates_LM">
+   <property name="text">
+    <string>&amp;Save coordinates LM</string>
+   </property>
+  </action>
+  <action name="action_Save_coordinates_Error">
+   <property name="text">
+    <string>&amp;Save coordinates Error</string>
+   </property>
+  </action>
+  <action name="action_Give_Reference">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/flag_red.png</normaloff>:/res/flag_red.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Give Reference</string>
+   </property>
+  </action>
+  <action name="action_Correct_Position">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/ruler_square.ico</normaloff>:/res/ruler_square.ico</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Correct Position</string>
+   </property>
+  </action>
+  <action name="action_Acquire">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/flag_green.png</normaloff>:/res/flag_green.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Acquire</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Plot_Error">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/chart_line_2.ico</normaloff>:/res/chart_line_2.ico</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Plot Error</string>
+   </property>
+  </action>
+  <action name="actionSave_coordinates_SEM_as">
+   <property name="text">
+    <string>Save coordinates SEM as ...</string>
+   </property>
+  </action>
+  <action name="actionSave_coordinates_Error_as">
+   <property name="text">
+    <string>Save coordinates Error as...</string>
+   </property>
+  </action>
+  <action name="actionSave_coordinates_LM_as">
+   <property name="text">
+    <string>Save coordinates LM as...</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/trash.ico</normaloff>:/res/trash.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Delete </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="action_Options">
+   <property name="text">
+    <string>&amp;Options</string>
+   </property>
+  </action>
+  <action name="actionCross_Detection">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/2x2_grid.ico</normaloff>:/res/2x2_grid.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Cross Detection</string>
+   </property>
+  </action>
+  <action name="actionCell_Shape_Detection">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/cell.png</normaloff>:/res/cell.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cell Shape Detection</string>
+   </property>
+  </action>
+  <action name="actionNavigate">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/compass.png</normaloff>:/res/compass.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Navigate</string>
+   </property>
+  </action>
+  <action name="action_Tiles_Map">
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/res/map_cal.ico</normaloff>:/res/map_cal.ico</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Tiles Map</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>mplwidget.py</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources.qrc"/>
+  <include location="../resources.qrc"/>
+  <include location="../resources.qrc"/>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

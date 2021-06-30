@@ -1,0 +1,5 @@
+C:\Users\Schwab\Documents\GitHub\MSite-master\CLEMSiteServer\TestApp\bin\x86\Debug\msite.exe.config
+C:\Users\Schwab\Documents\GitHub\MSite-master\CLEMSiteServer\TestApp\obj\x86\Debug\Interop.Atlas5.dll
+C:\Users\Schwab\Documents\GitHub\MSite-master\CLEMSiteServer\TestApp\obj\x86\Debug\MSiteServer4A.csproj.ResolveComReference.cache
+C:\Users\Schwab\Documents\GitHub\MSite-master\CLEMSiteServer\TestApp\obj\x86\Debug\msite.exe
+C:\Users\Schwab\Documents\GitHub\MSite-master\CLEMSiteServer\TestApp\obj\x86\Debug\msite.pdb

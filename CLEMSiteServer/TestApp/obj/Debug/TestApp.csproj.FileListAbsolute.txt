@@ -1,0 +1,9 @@
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\bin\Debug\TestApp.exe
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\bin\Debug\TestApp.pdb
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\bin\Debug\LBIndustrialCtrls.dll
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\bin\Debug\LBIndustrialCtrls.pdb
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\obj\Debug\TestApp.csprojResolveAssemblyReference.cache
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\obj\Debug\TestApp.MainForm.resources
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\obj\Debug\TestApp.csproj.GenerateResource.Cache
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\obj\Debug\TestApp.exe
+C:\Users\JMS\Desktop\FocusControl\Industrial\TestApp\obj\Debug\TestApp.pdb

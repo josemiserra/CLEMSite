@@ -1,0 +1,670 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>MSite Server Documentation</title>
+    <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: Wingdings;
+            panose-1: 5 0 0 0 0 0 0 0 0 0;
+        }
+
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: Consolas;
+            panose-1: 2 11 6 9 2 2 4 3 2 4;
+        }
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 0cm;
+            line-height: 115%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        pre {
+            mso-style-link: "HTML Preformatted Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            font-size: 10.0pt;
+            font-family: "Courier New";
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 36.0pt;
+            line-height: 115%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 36.0pt;
+            margin-bottom: .0001pt;
+            line-height: 115%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 36.0pt;
+            margin-bottom: .0001pt;
+            line-height: 115%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 10.0pt;
+            margin-left: 36.0pt;
+            line-height: 115%;
+            font-size: 11.0pt;
+            font-family: "Calibri",sans-serif;
+        }
+
+        span.HTMLPreformattedChar {
+            mso-style-name: "HTML Preformatted Char";
+            mso-style-link: "HTML Preformatted";
+            font-family: "Courier New";
+        }
+
+        .MsoChpDefault {
+            font-family: "Calibri",sans-serif;
+        }
+
+        .MsoPapDefault {
+            margin-bottom: 8.0pt;
+            line-height: 107%;
+        }
+
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 70.85pt 3.0cm 70.85pt 3.0cm;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+        -->
+    </style>
+
+
+</head>
+<body>
+    <h1>MSite CServer</h1>
+
+    <p><strong>Author :</strong> Jos&eacute; Miguel Serra Lleti</p>
+
+    <p><strong>Email :</strong> lleti@embl.de</p>
+
+    <h2><strong>1. Instructions</strong></h2>
+
+    <hr />
+    <figure>
+        <img src="readme_s/Scheme.png" alt="scheme">
+        <figcaption><span style="font-size:10px;"> <em>Application development workflow where the GUI calls a middleware server that calls the SMART SEM API.</em></span></figcaption>
+    </figure>
+    <p>
+        &nbsp; Run your server in the same computer where your SMART SEM server is installed. Make sure that your SMART SEM application is running and that you have&nbsp;<br />
+        your sample completely set up in the FIB/SEM&nbsp;before starting your server. &nbsp;
+    </p>
+
+    <p>
+        Select your ip (ip&acute;s are obtained from the system automatically) and your port. The&nbsp;default port is 8095 but could be changed to any other port. Be aware that if you change&nbsp;<br />
+        your IP or your Port you will need to stop and start again. If you want to use the server in a localhost select the 127.0.0.1 address or tick the box Use localhost.
+    </p>
+
+    <p>Push START to start the server.Before closing your aplication, stop the server using the STOP button.</p>
+
+    <h2>2. MSite CServer API</h2>
+
+       <p>
+           To find more about server code design, click <a href="readme_s/DESIGN.html"> here</a>.
+       </p>
+
+
+        <div class=WordSection1>
+
+            <p>
+                <span lang=EN-US>
+                    The server opens a TCP/IP socket listener
+                    in the specified address and port. From the GUI a socket connection must be
+                    opened, a message can be sent in form of a string.<br />
+                    Here an example for grabbing a frame from
+                    the SEM microscope screen is shown using python with the socket library.
+                </span>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <b>
+                    <span lang=EN-US style='font-size:10.0pt;
+font-family:"Courier New";color:blue'>import</span>
+                </b><span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>path</span><b>
+                    <span lang=EN-US style='font-size:
+10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:black'></span><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>&quot;C:\Test\\trialsGrab&quot;</span>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>payload</span><b>
+                    <span lang=EN-US style='font-size:
+10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:black'></span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>{</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'function'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>:</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'setDirFrames'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'dir'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>:</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>path</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>
+                        }  %
+                        set path for saving grab
+                    </span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>AF_INET</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>SOCK_STREAM</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>
+                        ) %
+                        open socket
+                    </span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>connect</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>((</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'127.0.0.1'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>int</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:red'>8095</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>)))</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>sendall</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>str</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>payload</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>
+                        )) %
+                        send payload as string
+                    </span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>answer</span><b>
+                    <span lang=EN-US style='font-size:
+10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>recv</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:red'>1024</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>)</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>&nbsp;</span>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <b>
+                    <span lang=EN-US style='font-size:10.0pt;
+font-family:"Courier New";color:navy'>
+                        % Now the directory is set up and we
+                        proceed to grab our frame
+                    </span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>payload</span><b>
+                    <span lang=EN-US style='font-size:
+10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:black'></span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>{</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'></span><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'function'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>:</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'grabFrame'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'></span><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'frame_name'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>:</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'Image'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>}</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>AF_INET</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>SOCK_STREAM</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>)</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>connect</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>((</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'127.0.0.1'</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>int</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:red'>8095</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>)))</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>sendall</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>str</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>payload</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>))</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:white'>
+                <span lang=EN-US style='font-size:10.0pt;font-family:
+"Courier New";color:black'>answer</span><b>
+                    <span lang=EN-US style='font-size:
+10.0pt;font-family:"Courier New";color:navy'>=</span>
+                </b><span lang=EN-US
+                          style='font-size:10.0pt;font-family:"Courier New";color:black'>client_socket</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>.</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>recv</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>(</span>
+                </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:red'>1024</span><b>
+                    <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>)</span>
+                </b>
+            </p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US style='font-size:9.0pt;line-height:115%;
+color:black'>&nbsp;</span>
+            </p>
+
+            <p class=MsoNormal>
+                <b>
+                    <span lang=EN-US style='line-height:115%;color:black'>
+                        Errors
+                        are the same as is expressed in the Zeiss API Manual, except for the NO_ERROR
+                        value, which means the execution of the function worked properly.
+                    </span>
+                </b>
+            </p>
+
+            <p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'>
+                <b>
+                    <span lang=EN-US style='font-size:12.0pt;line-height:115%'>
+                        1.<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    </span>
+                </b><b><span lang=EN-US>getStagePositionXY</span></b>
+            </p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    Gets coordinates X and Y from the
+                    microscope.
+                </span>
+            </p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:#EEEEEE;border:none;padding:0cm'>
+                    <b>
+                        <span lang=EN-US>
+                            {
+                            'function':
+                        </span>
+                    </b><span lang=EN-US>'getStagePositionXY'<b>}</b></span>
+                </p>
+
+            </div>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    Default RESPONSE<span style='color:#333333'>
+                    </span>
+                </span>
+            </p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+                <pre style='background:#EEEEEE;border:none;padding:0cm'><b><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif'>{</span></b><b><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif'>'xpos': '0.0',   ‘ypos': '0.0', ‘error’:’NO_ERROR’}</span></b></pre>
+            </div>
+
+            <p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+            <p class=MsoNormal><b><span lang=EN-US>Similar methods:</span></b></p>
+
+            <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>
+                <span lang=EN-US style='font-family:Symbol'>
+                    ·<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </span><b><span lang=EN-US>getStagePositionXYZ  </span></b>
+            </p>
+
+            <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'>
+                <span lang=EN-US
+                      style='font-family:Symbol'>
+                    ·<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </span><b><span lang=EN-US>getStagePositionComplete  </span></b><span lang=EN-US>(acquires x,y,z,r,t,m)</span>
+            </p>
+
+            <div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 8.0pt 0cm'>
+
+                <p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+            </div>
+
+            <p class=MsoListParagraphCxSpFirst><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'>
+                <b>
+                    <span lang=EN-US style='font-size:12.0pt;line-height:115%'>
+                        2.<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    </span>
+                </b><b><span lang=EN-US>setStagePositionXY</span></b>
+            </p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    Sets coordinates X and Y in the microscope.
+                </span>
+            </p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    ATTENTION: Pay attention to the SCALE, ALL VALUES
+                    FROM THE DATA STAGE MUST BE SENT IN METERS!!!!
+                </span>
+            </p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:#EEEEEE;border:none;padding:0cm'>
+                    <b>
+                        <span lang=EN-US>
+                            {
+                            'function':
+                        </span>
+                    </b><span lang=EN-US>
+                        'setStagePositionXY'<b>,'xpos':</b>0.0740<b>
+                            ,
+                            'ypos':
+                        </b>0.0850<b>}</b>
+                    </span>
+                </p>
+
+            </div>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    Default RESPONSE<span style='color:#333333'>
+                    </span>
+                </span>
+            </p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+                <pre style='background:#EEEEEE;border:none;padding:0cm'><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'>{</span></b><b><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'> ‘error’:’NO_ERROR’}</span></b></pre>
+            </div>
+
+            <div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+                <p class=MsoNormal style='border:none;padding:0cm'>&nbsp;</p>
+
+            </div>
+
+            <p class=MsoNormal><b><span lang=EN-US>Similar methods:</span></b></p>
+
+            <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>
+                <span lang=EN-US style='font-family:Symbol'>
+                    ·<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </span><b><span lang=EN-US>setStagePositionXYZ  </span></b>
+            </p>
+
+            <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'>
+                <span lang=EN-US
+                      style='font-family:Symbol'>
+                    ·<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                </span><b><span lang=EN-US>setStagePositionComplete  </span></b><span lang=EN-US>(sets x,y,z,r,t,m)</span>
+            </p>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'>
+                <b>
+                    <span lang=EN-US style='font-size:12.0pt;line-height:115%'>
+                        3.<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    </span>
+                </b><b><span lang=EN-US>setDirFrames</span></b>
+            </p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    Sets the directory (accessible from the
+                    microscope computer) where the images grabbed are going to be stored.
+                </span>
+            </p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:#EEEEEE;border:none;padding:0cm'>
+                    <b>
+                        <span lang=EN-US
+                              style='font-size:10.0pt;font-family:"Courier New";color:navy'>{</span>
+                    </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'function'</span><b>
+                        <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>:</span>
+                    </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'setDirFrames'</span><b>
+                        <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>,</span>
+                    </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:gray'>'dir'</span><b>
+                        <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>:</span>
+                    </b><span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:black'>path</span><b>
+                        <span lang=EN-US style='font-size:10.0pt;font-family:"Courier New";color:navy'>}</span>
+                    </b>
+                </p>
+
+            </div>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoNormal><span lang=EN-US>RESPONSE<span style='color:#333333'> </span></span></p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+                <pre style='background:#EEEEEE;border:none;padding:0cm'><b><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif'>{</span></b><b><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif'> ‘error’:’NO_ERROR’}</span></b></pre>
+            </div>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'>
+                <b>
+                    <span lang=EN-US style='font-size:12.0pt;line-height:115%'>
+                        4.<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                    </span>
+                </b><b><span lang=EN-US>grabFrame</span></b>
+            </p>
+
+            <p class=MsoNormal>
+                <span lang=EN-US>
+                    Grabs a frame and puts the name to the
+                    image specified by the call. By default it also adds the time of acquisition.  Pictures
+                    are saved as .tif with a metadata header.
+                </span>
+            </p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;background:#EEEEEE;border:none;padding:0cm'>
+                    <b>
+                        <span lang=EN-US>
+                            {
+                            'function'
+                        </span>
+                    </b><span lang=EN-US>:'grabFrame', <b>'frame_name'</b>:'Image'<b>}</b></span>
+                </p>
+
+            </div>
+
+            <p class=MsoNormal><span lang=EN-US>RESPONSE<span style='color:#333333'> </span></span></p>
+
+            <div style='border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;
+background:#EEEEEE'>
+                <pre style='background:#EEEEEE;border:none;padding:0cm'><b><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif'>{</span></b><b><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif'> ‘error’:’NO_ERROR’}</span></b></pre>
+            </div>
+
+            <div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+                <p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US>&nbsp;</span></p>
+
+            </div>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+            <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+        </div>
+
+</body>
+</html>>

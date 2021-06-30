@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Converter</class>
+ <widget class="QMainWindow" name="Converter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>1031</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Converter </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QDialogButtonBox" name="buttonBox">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>900</y>
+      <width>312</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>18</y>
+      <width>697</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Load  profile:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_profile"/>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButton_profile">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>Samples folder: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_forigin_2"/>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButton_forigin_2">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <widget class="QLabel" name="label_Status_2">
+         <property name="text">
+          <string>Destination folder: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_fdestiny_2"/>
+       </item>
+       <item>
+        <widget class="QToolButton" name="toolButton_fdestiny_2">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="0">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_common">
+         <property name="text">
+          <string>Common image name :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_common"/>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Add folder</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lineEdit_re"/>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Lens :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_4">
+            <item>
+             <property name="text">
+              <string>5x</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>10x</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>20x</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>40x</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Zoom factor: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_2"/>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QPushButton" name="pushButton_Add">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Regular expression:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Channel:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_3">
+            <item>
+             <property name="text">
+              <string>GFP</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RFP</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>YFP</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>mCherry</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Hoescht</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>DAPI</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>FITC</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>CFP</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Alexa_488</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>TexasRed</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>TL -Transmited Light</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RL - Reflected Light</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>CY3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Alexa_568</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <widget class="QCheckBox" name="checkBox_separated">
+          <property name="text">
+           <string>Saved in separated folder</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton_Run">
+         <property name="text">
+          <string>Run</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar_2">
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_Save">
+         <property name="text">
+          <string>Save profile</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_status">
+       <property name="text">
+        <string>Status : Empty</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>734</width>
+     <height>38</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

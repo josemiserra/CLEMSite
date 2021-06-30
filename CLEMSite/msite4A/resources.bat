@@ -1,0 +1,1 @@
+C:\Users\JMS\Anaconda2\Lib\site-packages\PyQt4\pyrcc4.exe -py3 C:\Users\JMS\Documents\msite\MSite\msite4A\resources.qrc -o C:\Users\JMS\Documents\msite\MSite\msite4A\resources_rc.py

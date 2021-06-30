@@ -1,0 +1,4 @@
+ Entry : 17:13:38 Wednesday, 23 June 2021
+  :_ 17:13:38--Server on wait. Click Start to connect to ATLAS.
+
+-------------------------------
